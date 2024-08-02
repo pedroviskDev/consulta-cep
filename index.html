@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaCEP</title>
+    <link rel="stylesheet" href="styles.css/reset.css">
+    <link rel="stylesheet" href="styles.css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="conteudo">
+            <h1 class="conteudo__titulo">Consulta CEP</h1>
+            <form id="formulario">
+                <input type="text" placeholder="Insira seu CEP" name="cep" class="formulario__cep inputs" maxlength="8">
+                <button type="submit" id="btn-consulta">Consultar</button>
+            </form>
+        </div>
+        <div class="endereco">
+            <form id="formulario__endereco">
+                <label class="endereco__texto">Estado:</label>
+                <input type="text" class="inputs" name="estado">
+                <label class="endereco__texto">Cidade:</label>
+                <input type="text" class="inputs" name="cidade">
+                <label class="endereco__texto">Bairro:</label>
+                <input type="text" class="inputs" name="bairro">
+                <label class="endereco__texto">Logradouro:</label>
+                <input type="text" class="inputs" name="logradouro">
+                <label class="endereco__texto">Complemento:</label>
+                <input type="text" class="inputs" name="complemento">
+            </form>
+            
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

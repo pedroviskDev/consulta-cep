@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --fonte-principal: "Roboto", sans-serif;
+    --fonte-secundaria: "Raleway", sans-serif;
+    --cor-titulo: #354446;
+    --cor-botao: #2B2B2B;
+    --cor-branco: #FFFFFF;
+}
+
+
+
+body{
+    background-image: url("../img/background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid blue;
+    flex-direction: column;
+
+}
+
+.conteudo {
+    text-align: center;
+    border: 0.5px solid var(--cor-botao);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    width: 55%;
+    height: 40vh;
+    padding: 0 2em;
+    border-radius: 16px;
+}
+
+.conteudo__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-titulo);
+    font-size: 3em;
+    margin: 1em 0;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-consulta {
+    background-color: var(--cor-botao);
+    color: var(--cor-branco);
+    border-radius: 16px;
+    padding: 1em;
+}
+
+.formulario__cep {
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 3em;
+}
+
+.inputs{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--cor-titulo);
+    margin: 0.5em 0;
+}
+
+.formulario__cep::placeholder{
+    color: var(--cor-botao);
+}
+
+
+#formulario__endereco{
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco {
+    display: none;
+    margin-top: 3em;
+}
+
+.show {
+    display: block;
+}
+
+.endereco__texto {
+    font-family: var(--fonte-secundaria);
+}
+
+@media screen and (min-width: 720px) {
+    .conteudo{
+        height: 50vh;
+        width: 30%;
+    }
+
+}
